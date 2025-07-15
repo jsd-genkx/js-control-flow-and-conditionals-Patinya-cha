@@ -5,7 +5,7 @@
 
 const userInput = "42";
 // Try changing to "hello", 10, null, NaN
-if (typeof userInput === 'number') {
+if (typeof userInput === 'number'&& !isNaN(userInput)){
     console.log(`${userInput} Is number`)
 }else {
     console.log(`${userInput} Is not number`)
