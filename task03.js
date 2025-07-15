@@ -6,7 +6,7 @@
 // 11+ chars → "Strong"
 
 const password = "s11mkhbu1223";
-if(password.length > 11){
+if(password.length >= 11){
     console.log("Strong");
 }else if(password.length >=6){
     console.log("Moderate")
