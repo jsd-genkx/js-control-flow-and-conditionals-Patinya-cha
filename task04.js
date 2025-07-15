@@ -8,4 +8,24 @@
 
 // TODO BONUS: Rewrite with if
 
-const num = 15;
+const num = 3;
+if(num%3===0 && num%5===0){
+    console.log("Fizzbuzz")
+}else if(num%3===0){
+    console.log("Fizz")
+}else if(num%5===0){
+    console.log("Buzz")
+}else {console.log("Not divisible by 3 or 5")};
+
+// With if
+let result = "";
+if (num % 3 === 0) {
+  result += "Fizz";   //ถ้าหาร 3 ลงตัวให้เพิ่ม "Fizz" 5 ลงตัวขึ้น 'Buzz'
+}
+if (num % 5 === 0) {  //ถ้าตรงตามสองเงื่อนไขจะขึ้น 'Fizzbuzz'
+  result += "Buzz";
+}
+if (result === "") {
+  result = "Not divisible by 3 or 5";
+}
+console.log(result);
